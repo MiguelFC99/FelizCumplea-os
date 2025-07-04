@@ -1,0 +1,89 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feliz Cumpleaños</title>
+  <!-- Google Font para la tarjeta -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Encabezado Animado -->
+  <div class="header">
+    <h1>🎉 ¡Feliz Cumpleaños, Tania! 🎉</h1>
+  </div>
+
+  <!-- Canvas de fuegos artificiales -->
+  <canvas id="c"></canvas>
+
+  <!-- Globos CSS flotantes -->
+  <div class="balloons-container">
+    <div class="balloon red"></div>
+    <div class="balloon orange"></div>
+    <div class="balloon yellow"></div>
+    <div class="balloon green"></div>
+    <div class="balloon blue"></div>
+    <div class="balloon purple"></div>
+  </div>
+
+  <!-- Tarjeta 3D de Cumpleaños -->
+  <div class="card" id="birthday-card">
+    <div class="outside">
+      <div class="front">
+        <p class="card-title">¡Feliz Cumpleaños Preciosa!</p>
+        <div class="cake">
+          <div class="top-layer"></div>
+          <div class="middle-layer"></div>
+          <div class="bottom-layer"></div>
+          <div class="candle"></div>
+        </div>
+      </div>
+      <div class="back"></div>
+    </div>
+    <div class="inside">
+      <p>Mi rayito de sol,<br>Te deseo lo mejor en este grandioso día lleno de amor y Felicidad.</p>
+      <h1>🎂</h1>
+      <p>Que este nuevo año te llene de salud, proyectos excelentes y gratitud.<br>Te amo mi dulce princesa</p>
+    </div>
+  </div>
+
+  <div class="carousel">
+    <div class="carousel-track">
+      <!-- Repite aquí tus 10 imágenes -->
+      <div class="slide"><img src="assets/images/img2.webp" alt=""></div>
+      <div class="slide"><img src="assets/images/img1.webp" alt=""></div>
+      <div class="slide"><img src="assets/images/img3.webp" alt=""></div>
+      <div class="slide"><img src="assets/images/img4.webp" alt=""></div>
+      <div class="slide"><img src="assets/images/img5.webp" alt=""></div>
+      <div class="slide"><img src="assets/images/img6.webp" alt=""></div>
+      <div class="slide"><img src="assets/images/img7.webp" alt=""></div>
+      <div class="slide"><img src="assets/images/img8.webp" alt=""></div>
+      <div class="slide"><img src="assets/images/img9.webp" alt=""></div>
+      <div class="slide"><img src="assets/images/img10.webp" alt=""></div>
+      <!-- … hasta img10 -->
+      <!-- Y justo tras la décima, vuelves a poner las mismas para el loop -->
+      <div class="slide"><img src="assets/images/img1.webp" alt=""></div>
+      <div class="slide"><img src="assets/images/img2.webp" alt=""></div>
+      <div class="slide"><img src="assets/images/img3.webp" alt=""></div>
+      <div class="slide"><img src="assets/images/img4.webp" alt=""></div>
+      <div class="slide"><img src="assets/images/img5.webp" alt=""></div>
+      <div class="slide"><img src="assets/images/img6.webp" alt=""></div>
+      <div class="slide"><img src="assets/images/img7.webp" alt=""></div>
+      <div class="slide"><img src="assets/images/img8.webp" alt=""></div>
+      <div class="slide"><img src="assets/images/img9.webp" alt=""></div>
+      <div class="slide"><img src="assets/images/img10.webp" alt=""></div>
+      <!-- … otra vez hasta img10 -->
+    </div>
+  </div>
+  
+  <!-- Audio de fondo -->
+  <audio
+    id="birthday-audio"
+    src="assets/audio/music.mp3"
+    preload="auto"
+  ></audio>
+  <script src="app.js"></script>
+</body>
+</html>
